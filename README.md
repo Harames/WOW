@@ -23,7 +23,7 @@ Follow [@mattaussaguel](//twitter.com/mattaussaguel) for updates as WOW evolves.
 
 ## Version
 
-1.0.3
+1.1.2
 
 ## Documentation
 
@@ -32,6 +32,14 @@ It just take seconds to install and use WOW.js!
 
 ### Dependencies
 - [animate.css](https://github.com/daneden/animate.css)
+
+### Installation
+
+- Bower
+
+```bash
+   bower install wowjs
+```
 
 ### Basic usage
 
@@ -70,7 +78,8 @@ var wow = new WOW(
     callback:     function(box) {
       // the callback is fired every time an animation is started
       // the argument that is passed in is the DOM node being animated
-    }
+    },
+    scrollContainer: null // optional scroll container selector, otherwise use window
   }
 );
 wow.init();
